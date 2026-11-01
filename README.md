@@ -26,3 +26,14 @@ options:
   -o OUTPUT, --output OUTPUT
                         Output file (Default: ing_kontoauszug.csv)
 ```
+
+## Output
+The CSV contains one row per booking with the columns
+
+| column | content |
+|---|---|
+| `date` | booking date |
+| `valuta` | value date |
+| `description` | booking type and counterparty, e.g. `Lastschrift VISA ALDI SUED` |
+| `purpose` | Verwendungszweck incl. Mandat/Referenz, multi-line text joined with spaces |
+| `amount` | amount in EUR |
